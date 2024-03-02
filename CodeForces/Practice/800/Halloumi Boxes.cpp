@@ -33,11 +33,14 @@ typedef     vector<int>       vint;
 const double eps = 1e-7;
 
 void cf(){
-    bool f;
+    bool f=false;
     string s;
-    int x, y, i, j, k, n, m, a, b, c=0, len;
-    cin >> n;
-    cout<<x<<e;
+    ll x, y, i, j, k, n, m, a, b, c=0, len;
+    cin >> n >> k;
+    vector<ll> v(n);
+    for(i=0; i<n; i++) cin >> v[i];
+    if(is_sorted(v.begin(), v.end()) || k>1) cout << "YES\n";
+    else cout << "NO\n";
 }
 
 
