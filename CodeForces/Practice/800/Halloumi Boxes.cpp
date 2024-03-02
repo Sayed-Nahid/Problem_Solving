@@ -35,7 +35,7 @@ const double eps = 1e-7;
 void cf(){
     bool f;
     string s;
-    ll x, y, i, j, k, n, m, a, b, c=0, len;
+    int x, y, i, j, k, n, m, a, b, c=0, len;
     cin >> n;
     cout<<x<<e;
 }
