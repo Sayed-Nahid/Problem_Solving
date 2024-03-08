@@ -32,7 +32,7 @@ typedef     vector<int>       vint;
 #define     setp(a)           fixed << setprecision(a)
 const double eps = 1e-7;
 
-void cf(){
+void solve(){
     bool f;
     string s;
     ll x, y, i, j, k, n, m, a, b, c=0, len;
@@ -51,7 +51,7 @@ int main()
     int t=1;
     cin >> t;
     while(t--){
-        cf();
+        solve();
     }
     return 0;
 }
