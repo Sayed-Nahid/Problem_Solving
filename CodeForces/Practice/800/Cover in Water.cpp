@@ -34,10 +34,18 @@ const double eps = 1e-7;
 
 void solve(){
     bool f=false;
-    string s="";
+    string s="", temp;
     ll x, y, i, j, k, n, m, a, b, c=0, len;
-    cin >> n;
-    cout<<x<<e;
+    cin >> n >> s;
+    for(i=0; i<n; i++){
+        if(s[i]=='.'){
+            temp = s.substr(i, 3);
+            c++;
+            if(temp == "...") f=true;
+        }
+    }
+    if(f) cout << 2 << e;
+    else cout<<c<<e;
 }
 
 

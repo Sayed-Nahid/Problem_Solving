@@ -33,11 +33,25 @@ typedef     vector<int>       vint;
 const double eps = 1e-7;
 
 void solve(){
-    bool f=false;
-    string s="";
+    bool f=true;
+    string s="", temp;
     ll x, y, i, j, k, n, m, a, b, c=0, len;
     cin >> n;
-    cout<<x<<e;
+    vector<ll> v(n);
+    for(i=0; i<n; i++) cin>>v[i];
+    if(is_sorted(v.begin(), v.end())) cout << "YES\n";
+    else{
+        for(i=1; i<n-1; i++){
+            if(v[i-1]<v[i] && v[i]>v[i+1]){
+                swap(v[i], v[i+1]);
+                i++;
+            }
+            else {f=false; break;}
+        }
+    }
+    
+    if(f) cout << "YES" << e;
+    else cout<<"NO"<<e;
 }
 
 
