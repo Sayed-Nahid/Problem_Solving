@@ -39,18 +39,7 @@ void solve(){
     cin >> n;
     vector<ll> v(n);
     for(i=0; i<n; i++) cin>>v[i];
-    if(is_sorted(v.begin(), v.end())) cout << "YES\n";
-    else{
-        for(i=1; i<n-1; i++){
-            if(v[i-1]<v[i] && v[i]>v[i+1]){
-                swap(v[i], v[i+1]);
-                i++;
-            }
-            else {f=false; break;}
-        }
-    }
-    
-    if(f) cout << "YES" << e;
+    if(v[0]==1) cout << "YES\n";
     else cout<<"NO"<<e;
 }
 
